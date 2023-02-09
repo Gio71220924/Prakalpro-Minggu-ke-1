@@ -17,6 +17,6 @@ else:
     else:
         hasil = 24*60 + (jam_2-1 - jam_1)*60 +(60+(menit_2 - menit_1))
 
-print("selisih antara", str(jam_1)+":"+str(menit_1), "dan" str(jam_2)+":"+str(menit_2), "adalah", hasil, "menit")   
+print("selisih antara", str(jam_1)+":"+str(menit_1), "dan", str(jam_2)+":"+str(menit_2), "adalah", hasil, "menit")   
 
 
