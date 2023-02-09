@@ -1,5 +1,5 @@
 #Soal nomor 3
-nhari_kerja = int(input("Hari kerja = "))
+hari_kerja = int(input("Hari kerja = "))
 upah_total = (hari_kerja* 80000)
 pajak = 5/100 * upah_total
 upah_bruto = (upah_total)
