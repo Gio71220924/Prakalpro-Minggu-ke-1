@@ -1,13 +1,22 @@
 # soal no 1
+#input
+jam_1 = int(input("Masukan jam 1:"))
+menit_1 = int(input("Masukan menit 1:"))
+jam_2 = int(input('Masukan jam 2:'))
+menit_2 = int(input("Masukan menit 2:"))
 
-jam_awal = int(input("Masukan jam awal:"))
-menit_awal = int(input("Masukan menit awal:"))
-jam_akhir = int(input('Masukan jam akhir:'))
-menit_akhir = int(input("Masukan menit akhir:"))
+if jam_1 < jam_2:
+    if menit_1 < menit_2:
+        hasil = (jam_2 - jam_1)*60 + (menit_2- menit_1)
+    else:
+        hasil = (jam_2-1 - jam_1)*60 + (60+(menit_2 - menit_1))
 
-selisih_jam = (jam_akhir - jam_awal)*60
-selisih_menit = (menit_akhir - menit_awal)
+else:
+    if jam_1 < jam_2 :
+        hasil = 24*60 + (jam_2 - jam_1)*60 + (menit_2 - menit_1)
+    else:
+        hasil = 24*60 + (jam_2-1 - jam_1)*60 +(60+(menit_2 - menit_1))
 
-selisih_waktu = print(selisih_jam + selisih_menit)
+print("selisih antara", str(jam_1)+":"+str(menit_1), "dan" str(jam_2)+":"+str(menit_2), "adalah", hasil, "menit")   
 
-print("Selisih waktunya adalah", selisih_waktu, "menit")
+
